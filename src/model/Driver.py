@@ -1,4 +1,4 @@
-from enums.driver_status import DriverStatus
+from enums.DriverStatus import DriverStatus
 
 
 class Driver:
@@ -35,3 +35,4 @@ class Driver:
 
     def __str__(self):
         return f"Driver(id={self._driver_id}, name={self._name}, status={self._status.name})"
+
