@@ -1,5 +1,5 @@
 import uuid
-from model.ride import Ride
+from model.Ride import Ride
 
 
 class RideFactory:

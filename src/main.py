@@ -43,6 +43,14 @@ def main():
     except Exception as e:
         print("Error:", e)
 
+    manager.ride_service.accept_ride(ride)
+    print("Ride Accepted:", ride.status.name)
+
+    manager.ride_service.start_ride(ride)
+    print("Ride Started:", ride.status.name)
+
+    manager.ride_service.complete_ride(ride)
+    print("Ride Completed:", ride.status.name)
 
 if __name__ == "__main__":
     main()
